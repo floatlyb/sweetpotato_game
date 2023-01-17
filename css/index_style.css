@@ -1,0 +1,21 @@
+@import "default.css";
+body{ 
+    font-family:'맑은 고딕', sans-serif;
+    background:#FDE7B0; overflow:hidden;
+}
+html,body{ width:100%; height:100%;}
+#wrapper{ width:100%; height:100%; overflow:hidden; margin-top:50px;}
+
+#wrapper>img{
+    width:90%; height:auto; margin:170px auto 0; 
+}
+#wrapper>h1{
+    width:257px; height:71px; position:absolute; left:50%; top:50px;
+    transform:translateX(-50%); text-indent:-9999px;
+    background:url("../img/logo.png") no-repeat center center;
+}
+#wrapper>.start{
+    width:180px; height:50px; border:2px solid #222; margin:83px 84px 0 ;
+    border-radius:25px; text-indent:-9999px;
+    background:#fc0 url("../img/start.png") no-repeat center center;
+}

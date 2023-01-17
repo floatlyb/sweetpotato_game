@@ -1,0 +1,145 @@
+@import "default.css";
+html,body{ width:100%; height:100%;}
+body{ 
+    font-family:'맑은 고딕', sans-serif;
+    font-size:14px;
+    background:#FDE7B0; 
+    /*margin-top:10px;*/ overflow:hidden;
+}
+section{ width:100%; height:100%;}
+
+
+.info{display:none;}
+.info>h1{ 
+    width:143px; height:36px; text-indent:-9999px;
+    position:absolute; top:48px; left:115px; 
+    background:url("../img/info.png") no-repeat;
+    background-size:contain;
+}
+.info>.next{ 
+    width:30px; height:30px; text-indent:-9999px;
+    position:absolute; top:12px; right:12px; 
+    background:url("../img/next.png") no-repeat;
+}
+.info>.content{
+    margin-top:150px;
+    display:flex; flex-wrap:wrap; align-content:center;
+}
+.info>.content>div{ 
+    width:130px; margin:10px auto; font-size:14px;
+}
+.info>.content>div>p{
+    width:120px; height:38px; margin-top:10px;
+    text-align:center;
+}
+.info>.fight{
+    display:flex; justify-content:space-around;
+}
+
+.play{ display:block;}
+.play>.scores{ display:flex; justify-content: center;}
+.play>.scores>.score{
+    width:82px; height:19px;  margin-top:30px;
+    background:url("../img/score.png") no-repeat left center;
+    background-size:contain; padding-left:90px; font-size:16px; font-weight:bold;
+}
+.play>.scores>.score2{
+    width:47px; height:19px; margin-top:30px;
+    background:url("../img/socre2.png") no-repeat left center;
+    background-size:contain; padding-left:55px; font-size:16px; font-weight:bold;
+}
+.play>img:first-of-type{ margin-top:106px; margin-left:16px;}
+.play>img:nth-of-type(2){ position:absolute; top:106px; right:5px; }
+.play>.play_area{
+    width:330px; height:315px; position:relative; left:17px; bottom:20px;
+    background:url("../img/machine.png") no-repeat;
+}
+.play>.play_area>div{ 
+    width:91px; height:91px; background:url("../img/Ellipse.png") no-repeat;
+}
+.play>.play_area>div:first-of-type{ position:absolute; top:19px; left:61px;}
+.play>.play_area>div:nth-of-type(2){ position:absolute; top:19px; left:181px;}
+.play>.play_area>div:nth-of-type(3){ position:absolute; top:123px; left:8px;}
+.play>.play_area>div:nth-of-type(4){ position:absolute; top:123px; left:122px;}
+.play>.play_area>div:nth-of-type(5){ position:absolute; top:123px; left:228px;}
+.play>.play_area>div:nth-of-type(6){ position:absolute; top:214px; left:58px;}
+.play>.play_area>div:nth-of-type(7){ position:absolute; top:214px; left:182px;}
+
+.play>.play_area .circle{ 
+   background:url("../img/Ellipse2.png") no-repeat;
+}
+.play>.play_area>div img { 
+    width:80px; height:80px; margin-left:10px;
+}
+
+
+.play>.time_area{ 
+    width:360px; height:60px; background:#FFCC48;
+    position:absolute; top:580px;
+}
+.play>.time_area>div{
+    width:319px; height:38px; background:#af7f05;
+    border:2px solid #222; border-radius:25px;
+    position:absolute; top:8px; left:20px; overflow:hidden;
+}
+.play>.time_area>div>span{
+    display:block; width:0%; height:38px; 
+    background:#F8E4B3; border-radius:25px;
+}
+.play>.time_area>div.on>span{
+    width:100%; transition:all 15s; transition-timing-function: linear;
+    
+}
+.play>.time_area>div>span>p{
+     color:#fff; margin-left:150px; font-size:20px; font-weight:bold;
+}
+.end{
+    margin-top:0px;
+    background:url("../img/end.jpg") no-repeat;
+    display:none;
+}
+.end>.score2{
+    width:89px; height:37px; 
+    background:url("../img/socre2.png") no-repeat;
+    background-size:contain;
+    position:absolute; top:81px; left:91px;
+    padding-left:100px; font-size:30px; font-weight:bold;
+    
+}
+.end>.again{
+    display:block;
+    width:150px; height:41px; text-indent:-999px;
+    background:url("../img/restart.png") no-repeat;
+    background-size:contain; 
+    position:absolute; top:159px; left:110px;
+    
+}
+
+.end2{ display:none;}
+.end2>.score2{
+    width:89px; height:37px;
+    background:url("../img/socre2.png") no-repeat;
+    background-size:contain;
+    position:absolute; top:81px; left:91px;
+    padding-left:100px; font-size:30px; font-weight:bold;
+
+}
+.end2>img{
+    width:275px; height:260px;
+    position:absolute; top:291px; left:42px;
+}
+
+.end2>.again{
+    display:block;
+    width:150px; height:41px; text-indent:-999px;
+    background:url("../img/restart.png") no-repeat;
+    background-size:contain; 
+    position:absolute; top:159px; left:110px;
+    
+}
+
+
+
+
+
+
