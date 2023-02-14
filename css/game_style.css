@@ -271,7 +271,7 @@ section {
     display: block;
     width: 150px;
     height: 41px;
-    text-indent: -999px;
+    text-indent: -9999px;
     background: url("../img/restart.png") no-repeat;
     background-size: contain;
     position: absolute;
