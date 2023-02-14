@@ -8,7 +8,7 @@ $(function () {
     let clickable = false;
     let num2 = 0;
 
-
+    //시간 게이지
     $('.play>.time_area>div>span').animate({width:"100%"},second);
 
     function randomTarget() {
@@ -20,11 +20,12 @@ $(function () {
         num2 = Math.floor(Math.random() * 3) + 1;
         $('.circle').append($('<img src="img/g' + num2 + '.png" alt="">'));
 
+       
         setTimeout(function () {
             $('.circle').find('img').remove();
             $('.play_area>div').filter('.circle').removeClass('circle');
         }, 600);
-        $('.i' + num).on('click', function () {
+        $('.i' + num).on('click', function () {  
             if (num2 == 1) {
                 score += 100;
                 $('.play>.scores>.score2').text(score);
@@ -50,15 +51,15 @@ $(function () {
             clearInterval(timer);
             $('.play').hide();
             $('.time_area>div').removeClass('on');
-            if (score >= 1200) {
+            if (score >= 1000) {
                 $('.end').show();
-                $('.end').find('.score2').text(score);
+                $('.end').find('.score2>span').text(score);
 
                // $('.play>.time_area>div>span').toggleClass('on')
                 
             } else {
                 $('.end2').show();
-                $('.end2').find('.score2').text(score);
+                $('.end2').find('.score2>span').text(score);
 
               // $('.play>.time_area>div>span').toggleClass('on');              
             }
