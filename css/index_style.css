@@ -18,6 +18,9 @@ body {
     height: 100%;
     overflow: hidden;
     position: relative;
+    /*추가*/
+    max-width:767px;
+    min-width:360px;
 }
 
 #wrapper>img {
